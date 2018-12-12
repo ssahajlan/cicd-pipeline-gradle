@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage ('Checkout') {
+    stage ('Checkout') { 
       steps {
         echo 'Source Code Checkoout Automation'
         git credentialsId: 'GituHub'
