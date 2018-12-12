@@ -7,6 +7,7 @@ pipeline {
         checkout scm
     /*    git credentialsId: 'GituHub' url: 'https://github.com/ssahajlan/cicd-pipeline-gradle'*/
       }  
+     }  
     stage ('Build')  {
       steps {
         echo 'Running Build Automation'
