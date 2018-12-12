@@ -1,22 +1,21 @@
-plugins { id "com.moowork.node" version "1.2.0"}
+plugins { id "com.moowork.node" version "1.2.0"
+}
 
 node { 
        download=true 
-       version='9.11.1'
-       npmVersion='5.6.0'
+       version="9.11.1"
+       npmVersion="5.6.0"
      }
 
 task build 
 
-task zip(type: Zip) 
-  {
-    from ('.') 
-    {
+task zip(type: Zip) {
+    from ('.') {
      include "*"
      include "bin/**"
      include "data/**"
      include "node_module/**"
-     include "Public/**"
+     include "public/**"
      include "routes/**"
      include "views/**"
     }
