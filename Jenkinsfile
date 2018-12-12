@@ -4,7 +4,8 @@ pipeline {
     stage ('Checkout') { 
       steps {
         echo 'Source Code Checkoout Automation'
-        git credentialsId: 'GituHub' url: 'https://github.com/ssahajlan/cicd-pipeline-gradle'
+        checkout scm
+    /*    git credentialsId: 'GituHub' url: 'https://github.com/ssahajlan/cicd-pipeline-gradle'*/
       }  
     stage ('Build')  {
       steps {
